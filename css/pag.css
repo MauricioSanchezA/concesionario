@@ -1,0 +1,48 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    min-height: 100vh; /* Aseguramos que ocupe al menos toda la altura de la ventana */
+    text-align: center;
+    background-color: #428097;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 0 0 20px; /* Eliminamos el margen superior y agregamos espacio en la parte inferior */
+}
+
+/* Estilo para la sección de opciones */
+.opciones {
+    display: flex;
+    flex-direction: column; /* Apilamos los elementos verticalmente */
+    gap: 20px;
+}
+
+/* Estilo para los enlaces de las opciones */
+.opciones a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.opciones a:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Formulario */
+.users-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.users-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.users-form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.users-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Tabla */
+.users-table {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users-table h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Enlaces */
+.users-table a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.users-table a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para los botones */
+.users_table_delete {
+    background-color: #e74c3c;
+}
+
+.users_table_edit {
+    background-color: #3498db;
+}
+
+/* Estilos para el formulario de consulta */
+.consulta-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.consulta-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}

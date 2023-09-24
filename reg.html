@@ -1,0 +1,54 @@
+<!-- Inicio del documento HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> <!-- Fuente de Google Fonts -->
+	<link rel="stylesheet" type="text/css" href="../css/stylelogin.css"> <!-- Hoja de estilos -->
+	<title>APLICATIVO</title> <!-- Título de la página --><meta name="keyword" content="masajes, descansos"> <!-- Palabras clave -->
+    <meta name="description" content="Este es un concesionario"> <!-- Descripción del spa -->
+    <meta name="author" content="Alejandro Sánchez Loaiza"> <!-- Autor del documento -->
+    <link rel="stylesheet" href="css/stylelogin1.css">
+    <link rel="shortcut icon" href="img/icono.jpg"> <!-- Icono de la página -->
+</head>
+<body>
+	<div class="align">
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login"  href="log.html">Iniciar sesion</a> <!-- Enlace para iniciar sesión -->
+				<a id="register" class="selected" href="reg.html">Registrarse</a> <!-- Enlace para registrarse -->
+				<div></div>
+			</div>
+			<div class="tabs">
+				<form action="insertar.php" method="POST"> <!-- Formulario de registro -->
+					<!-- Campos de entrada del formulario -->
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Correo Electrónico" type="text" name="correo"> <!-- Campo de entrada de correo electrónico -->
+							<img src="img/correo.png"> <!-- Icono de correo electrónico -->
+						</div>
+						<div class="input">
+							<input placeholder="Nombre de Usuario" type="text" name="nombre_usuario"> <!-- Campo de entrada de nombre de usuario -->
+							<img src="img/usuario.jpg"> <!-- Icono de usuario -->
+						</div>
+						<div class="input">
+							<input placeholder="Contraseña" type="password" name="contrasena"> <!-- Campo de entrada de contraseña -->
+							<img src="img/contra.png"> <!-- Icono de contraseña -->
+						</div>
+					</div>
+					<input type="hidden" name="token" value="tu_token_de_seguridad">
+					<button type="submit">Registrarse</button> <!-- Botón de registro -->
+					<br>
+				</form>
+				
+				
+			</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script> <!-- Archivo de jQuery -->
+	<script src="js/index.js"></script> <!-- Archivo de JavaScript -->
+</body>
+</html>
+<!-- Fin del documento HTML -->

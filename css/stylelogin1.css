@@ -1,0 +1,210 @@
+/* Estilo global para todos los elementos */
+* {
+	box-sizing: border-box; /* Incluye el padding y border en el tamaño total del elemento */
+	margin: 0; /* Elimina el margen por defecto */
+	padding: 0; /* Elimina el padding por defecto */
+	text-decoration: none; /* Elimina la decoración de texto por defecto */
+	font-family: "Roboto"; /* Fuente de texto */
+	outline: none; /* Elimina el contorno al seleccionar un elemento */
+	border: none; /* Elimina los bordes por defecto */
+}
+
+/* Estilo del html y body */
+html, body {
+	height: 100%; /* Establece el alto del html y body al 100% */
+	width: 100%;
+	background: #2c5532; /* Establece el color de fondo */
+	background-image: url(../img/fondo_1.jpg); /* Establece la imagen de fondo */
+	background-size: cover;
+}
+
+
+/* Estilo de la clase .align */
+.align {
+	height: 100%; /* Establece el alto de la clase .align al 100% */
+	display: flex; /* Habilita el flexbox */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+	justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+	flex-direction: column; /* Establece la dirección de los elementos como columna */
+	padding-bottom: 8px; /* Establece el padding inferior */
+}
+
+/* Estilo del logo */
+.logo {
+	width: 120px; /* Establece el ancho del logo */
+}
+
+/* Estilo de la clase .card */
+.card {
+	margin-top: 28px; /* Establece el margen superior */
+	height: 100%; /* Establece el alto al 100% */
+	max-height: 446px; /* Establece la altura máxima */
+	width: 396px; /* Establece el ancho */
+	background: #121212; /* Establece el color de fondo */
+	border: 1px solid #373737; /* Establece el borde */
+	border-radius: 10px; /* Establece el radio de borde */
+	overflow: hidden; /* Oculta el contenido que se desborda */
+	transition: max-height 0.2s; /* Establece la transición de altura máxima */
+}
+
+/* Estilo cuando la clase .card se extiende */
+.extend {
+	max-height: 480px; /* Establece la altura máxima extendida */
+}
+
+/* Estilo de la clase .head */
+.head {
+	width: 100%; /* Establece el ancho al 100% */
+	display: flex; /* Habilita el flexbox */
+	height: 72px; /* Establece la altura */
+	border-bottom: 1px solid #373737; /* Establece el borde inferior */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilo de los enlaces dentro de .head */
+.head a {
+	height: 100%; /* Establece la altura al 100% */
+	padding: 0 28px; /* Establece el padding izquierdo y derecho */
+	display: flex; /* Habilita el flexbox */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+	justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+	color: rgb(140,140,140); /* Establece el color de texto */
+	font-size: 20px; /* Establece el tamaño de fuente */
+	font-weight: 500; /* Establece el grosor de fuente */
+}
+
+/* Estilo del enlace seleccionado en .head */
+.head .selected {
+	position: relative; /* Establece la posición relativa */
+	color: #00FF5C; /* Establece el color de texto */
+	font-weight: 700; /* Establece el grosor de fuente */
+}
+
+/* Estilo del pseudo-elemento :after del enlace seleccionado en .head */
+.head .selected:after {
+	position: absolute; /* Establece la posición absoluta */
+	content: ""; /* Contenido vacío */
+	bottom: 0; /* Establece la posición inferior */
+	left: 0; /* Establece la posición izquierda */
+	height: 5px; /* Establece la altura */
+	width: 100%; /* Establece el ancho */
+	background: #00FF5C; /* Establece el color de fondo */
+	border-radius: 99px 99px 0 0; /* Establece el radio de borde */
+}
+
+/* Estilo de la clase .tabs */
+.tabs {
+	height: calc(100% - 72px); /* Establece la altura restando la altura del encabezado */
+	display: flex; /* Habilita el flexbox */
+}
+
+/* Estilo de los formularios */
+form {
+	width: 100%; /* Establece el ancho al 100% */
+	height: 100%; /* Establece el alto al 100% */
+	flex-shrink: 0; /* Evita que el formulario se reduzca */
+	padding: 44px 38px; /* Establece el padding */
+	display: flex; /* Habilita el flexbox */
+	flex-direction: column; /* Establece la dirección de los elementos como columna */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+	position: relative; /* Establece la posición relativa */
+	right: 0; /* Establece la posición derecha */
+	transition: right 0.2s; /* Establece la transición de posición derecha */
+}
+
+/* Estilo cuando el formulario se extiende */
+.extend form {
+	right: 100%; /* Establece la posición derecha al 100% */
+}
+
+/* Estilo de la clase .inputs */
+.inputs {
+	width: 100%; /* Establece el ancho al 100% */
+	padding-top: 6px; /* Establece el padding superior */
+}
+
+/* Estilo de la clase .input */
+.input {
+	position: relative; /* Establece la posición relativa */
+	margin-bottom: 20px; /* Establece el margen inferior */
+	width: 100%; /* Establece el ancho al 100% */
+	display: flex; /* Habilita el flexbox */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+/* Estilo del input dentro de .input */
+.input input {
+	width: 100%; /* Establece el ancho al 100% */
+	font-size: 17px; /* Establece el tamaño de fuente */
+	background: #1C1C1C; /* Establece el color de fondo */
+	border-radius: 8px; /* Establece el radio de borde */
+	padding: 16px 18px 16px 51px; /* Establece el padding */
+	color: rgb(220,220,220); /* Establece el color de texto */
+}
+
+/* Estilo de la imagen dentro de .input */
+.input img {
+	width: 16px; /* Establece el ancho */
+	position: absolute; /* Establece la posición absoluta */
+	left: 19px; /* Establece la posición izquierda */
+}
+
+/* Estilo de la clase .checkbox */
+.checkbox {
+	height: 40px; /* Establece la altura */
+	display: flex; /* Habilita el flexbox */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+	position: relative; /* Establece la posición relativa */
+	cursor: pointer; /* Establece el cursor */
+}
+
+/* Estilo del input dentro de .checkbox */
+.checkbox input {
+	position: absolute; /* Establece la posición absoluta */
+	opacity: 0; /* Establece la opacidad */
+	height: 0; /* Establece la altura */
+	width: 0; /* Establece el ancho */
+}
+
+/* Estilo del span dentro de .checkbox */
+.checkbox span {
+	display: flex; /* Habilita el flexbox */
+	align-items: center; /* Alinea los elementos verticalmente en el centro */
+	color: rgb(110,110,110); /* Establece el color de texto */
+	font-size: 16px; /* Establece el tamaño de fuente */
+	user-select: none; /* Evita la selección de texto */
+}
+
+/* Estilo del pseudo-elemento :before del span dentro de .checkbox */
+.checkbox span:before {
+	content: ""; /* Contenido vacío */
+	width: 22px; /* Establece el ancho */
+	height: 22px; /* Establece la altura */
+	border-radius: 6px; /* Establece el radio de borde */
+	margin-right: 16px; /* Establece el margen derecho */
+	background-color: #1C1C1C; /* Establece el color de fondo */
+}
+
+/* Estilo del pseudo-elemento :before del span dentro de .checkbox cuando se pasa el cursor */
+.checkbox:hover input ~ span:before {
+	background-color: rgb(50,50,50); /* Establece el color de fondo */
+}
+
+/* Estilo del input dentro de .checkbox cuando está marcado */
+.checkbox input:checked ~ span:before {
+	background-image: url(../img/checked.png); /* Establece la imagen de fondo */
+	background-size: cover; /* Establece el tamaño de la imagen de fondo */
+}
+
+/* Estilo del botón dentro de .card */
+.card button {
+	display: block; /* Establece el elemento como bloque */
+	background: #00FF5C; /* Establece el color de fondo */
+	padding: 13px 40px; /* Establece el padding */
+	border-radius: 10px; /* Establece el radio de borde */
+	color: #003B15; /* Establece el color de texto */
+	font-weight: 700; /* Establece el grosor de fuente */
+	font-size: 21px; /* Establece el tamaño de fuente */
+	cursor: pointer; /* Establece el cursor */
+}
